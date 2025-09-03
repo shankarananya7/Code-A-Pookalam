@@ -5,7 +5,7 @@ Welcome to CODE-A-പൂക്കളം, a creative coding challenge scheduled f
 
 
 ### Your Details
-- [Name] - [Branch] - [Semester]
+- Ananya Shankar - CS1 - S1
 
 
 
@@ -14,19 +14,27 @@ Welcome to CODE-A-പൂക്കളം, a creative coding challenge scheduled f
 
 
 ### Pookalam Description
-Brief description about your pookalam. What makes it special and different.
+Small glowing golden dots around the rangoli. Beautiful diamond/star shapes between petals. Glow/shadow effects to make it festive.
 
 
 
-### Technologies Used 
-
+### Technologies Used
+Created div elements for circles, petals, dots, and diamonds.
+Acts as the skeleton of the design.
+Colors & gradients → background: radial-gradient(circle, yellow, orange);
+Shapes:
+Circles → using border-radius: 50%.
+Petals → using clip-path: polygon(...).
+Diamonds → using transform: rotate(45deg).
+Positioning → absolute positioning to place each petal and decoration symmetrically.
+Glow Effects → box-shadow to give a glowing rangoli look.
 
 ### Video explaining How you build the pookalam
-
+<video controls src="Video explaining How you built the pookalam.mp4" title="Title"></video>
 
 
 ### Screenshots
-
+![alt text](<CODE-A-POOKALAM SS.png>)
 
 
 Happy Onam ! <br>

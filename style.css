@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, #fff8dc, #ffefd5, #ffe4b5);
+  margin: 0;
+}
+
+.rangoli {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.big {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, yellow, orange);
+  top: 0;
+  left: 0;
+}
+
+.medium {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, red, darkred);
+  top: 75px;
+  left: 75px;
+}
+
+.small {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, purple, violet);
+  top: 140px;
+  left: 140px;
+  box-shadow: 0 0 25px violet;
+}
+
+/* Petals */
+.petal {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform-origin: center bottom;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.p1 { top: -50px; left: 150px; transform: rotate(0deg); background: hotpink; }
+.p2 { top: 50px; right: -50px; transform: rotate(90deg); background: lightblue; }
+.p3 { bottom: -50px; left: 150px; transform: rotate(180deg); background: lightgreen; }
+.p4 { top: 50px; left: -50px; transform: rotate(270deg); background: gold; }
+
+.p5 { top: 10px; left: 320px; transform: rotate(45deg); background: coral; }
+.p6 { top: 320px; left: 320px; transform: rotate(135deg); background: cyan; }
+.p7 { top: 320px; left: -40px; transform: rotate(225deg); background: lime; }
+.p8 { top: 10px; left: -40px; transform: rotate(315deg); background: tomato; }
+
+/* Outer decorative dots */
+.dot {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(circle, white, gold);
+  box-shadow: 0 0 10px gold;
+}
+
+.d1 { top: -30px; left: 185px; }
+.d2 { top: 185px; right: -30px; }
+.d3 { bottom: -30px; left: 185px; }
+.d4 { top: 185px; left: -30px; }
+
+.d5 { top: 30px; left: 30px; }
+.d6 { top: 30px; right: 30px; }
+.d7 { bottom: 30px; left: 30px; }
+.d8 { bottom: 30px; right: 30px; }
+
+/* Diamonds */
+.diamond {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, white, skyblue);
+  transform: rotate(45deg);
+  box-shadow: 0 0 15px cyan;
+}
+
+.di1 { top: 0; left: 180px; }
+.di2 { left: 180px; bottom: 0; }
+.di3 { left: 0; top: 180px; }
+.di4 { right: 0; top: 180px; }
